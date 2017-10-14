@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Portable.Text</RootNamespace>
     <AssemblyName>Portable.Text.Encoding</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -16,6 +16,7 @@
 
 Platforms such as Windows Phone currently do not provide support for text encodings other than a limited subset of the Unicode encodings. This can be a real show-stopper when you need to work with legacy text encodings.</Description>
     <SignAssembly>true</SignAssembly>
+    <NoWarn>1701;1702;1705;CS0114;CS0108</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="CJK\big5.table">
